@@ -1,3 +1,4 @@
+
 let app
 let juego
 
@@ -28,6 +29,8 @@ class App{
     this.botones = new Botones(200, 200, 200, 200, "siguiente")
     this.botones2 = new Botones(300, height-100, 100, 100, "volver")
     
+    this.botonBifurcacion = new Botones(200, height-200, 100, 100, 4)
+    
 
   }
   
@@ -39,6 +42,7 @@ class App{
     if(this.estado == 1){
       image(this.img[1], 0, 0)
             this.botones.dibujar()
+            this.botonBifurcacion.dibujar()
     }
     if(this.estado == 2){
       image(this.img[2], 0, 0)
@@ -63,6 +67,7 @@ class App{
               image(this.img[6], 0, 0)  
             this.botones2.dibujar()
     }
+    
   } 
   
   mouseClicked(){
@@ -74,6 +79,8 @@ class App{
       this.botones.mouseClicked()
     }
       //this.botones2.mouseClicked()
+    
+    this.botonBifurcacion.mouseClicked()
   
   }
   
@@ -86,9 +93,9 @@ class App{
     } 
       if (param == "volver" && this.estado > 0) {
       this.estado --
-    } /*else if (param != "volver" && param != "siguiente") {
+    } else if (param != "volver" && param != "siguiente") {
       this.estado=param
-    }*/
+    }
   }
 }
 
