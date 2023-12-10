@@ -7,6 +7,6 @@ class Comida{
   }
   
   dibujar(){  
-    image(juego.img[6], this.posX, this.posY, this.ancho, this.alto)
+    image(app.juego.img[6], this.posX, this.posY, this.ancho, this.alto)
    }  
 }
