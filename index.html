@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="estilos.css"/>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/papercss@1.9.2/dist/paper.min.css"
+    />
+    <title>Document</title>
+  </head>
+  
+  <body>
+    <div>
+        <header>        
+            <h1 class="titulo">La Hormiga y La Cigarra</h1>
+            <h2>Una bebida maravillosa</h2>
+            <img class="fondoHeader" src="img/img1.jpg" alt="">
+        </header>
+
+       <!----
+         nav li {
+         display: inline-block;
+         padding: 20px;
+         }
+
+         nav a:hover {
+         color: oldlace;
+         background-color: darkolivegreen;
+} --->
+        
+        <nav>
+            <ul>
+                <li><a href="#Introduccion">Sobre mí</a></li>
+                <li><a href="#LaAventura">La Aventura</a></li>
+                <li><a href="#Bitacora">Bitacora</a></li>
+            </ul>
+        </nav>
+
+        <div class="Introduccion">
+        <h4 id="Introduccion">Introducción</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor blanditiis debitis eum <b>sed accusantium aliquid</b> quia natus enim fuga error impedit et ipsum eaque aperiam, beatae eius iste! Voluptatibus!</p>
+        <p class="pie-de-imagen">Fotografia de un termo cebando mate.</p>
+        </div>
+        
+        <article class="article">
+            <h3 id="LaAventura">Historia</h3>
+                <h1 class="article-title"><a href="">Article Title</a></h1>
+                <p class="article-meta">Written by <a href="#">Super User</a></p>
+                <p class="text-lead"> Lorem... </p>
+                <p>Lorem...</p>
+
+                <div class="row flex-spaces child-borders">
+                  <label class="paper-btn margin" for="modal-1">Open Modal!</label>
+                </div>
+                <input class="modal-state" id="modal-1" type="checkbox">
+                <div class="modal">
+                  <label class="modal-bg" for="modal-1"></label>
+                  <div class="modal-body">
+                    <label class="btn-close" for="modal-1">X</label>
+                      <iframe src="tpfinal/index.html" frameborder="0" width="600" height="600"></iframe>
+                  </div>
+                </div>
+              
+                <div class="row">
+                  <button>Read More</button>
+                  <button>5 Comments</button>
+                </div>
+              </article>
+
+        <article>        
+            <h3 id="Bitacora">Importancia</h3>
+            <a href="#arriba"><img class="flecha" src="img/flecha.png" alt=""></a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eius ducimus eos necessitatibus hic, reprehenderit quaerat distinctio qui asperiores voluptates! Sed, nisi aspernatur atque non fugit corporis ratione repudiandae voluptate?</p>
+        </article>
+
+        <footer>
+            <p>Esto es un footer</p>
+        </footer>
+    </div>
+</body>
+</html>

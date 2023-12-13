@@ -1,0 +1,46 @@
+div {
+    background-color: lightgoldenrodyellow;
+    width: 800px;
+    max-width: 95%; 
+    margin: 0 auto;
+}
+
+header {
+    padding: 40px;
+}
+
+.titulo {
+    float: left;
+}
+
+.fondoHeader {
+    max-width: 20%;
+    float: right;
+}
+
+nav{
+    width: 800px;
+    max-width: 55%; 
+    margin: 0 auto; 
+}
+nav li {
+    display: inline-block;
+    padding: 20px;
+}
+
+article {
+    margin: 30px;
+    max-width: 85%;
+    padding-top: 10px;
+
+}
+
+footer {
+    color: white;
+    background-color: black;
+    padding: 50px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
