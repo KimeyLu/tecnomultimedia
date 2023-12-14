@@ -1,0 +1,26 @@
+.container-fluid {
+    background-color: red;
+    padding: 15%;
+}
+
+.container2 {
+    background-color: blue;
+    padding: 20%;
+}
+.btn {
+    margin-top: 20%;
+    margin-left: 40%;
+}
+modal 
+.modal-dialog  {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.modal-header-sm  {
+    margin-top: 0.5%;
+}
+.juego {
+    padding-left: 10%;
+    margin-top: -2%;
+    margin-bottom: -3%;
+}
