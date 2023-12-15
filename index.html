@@ -1,84 +1,112 @@
-<!DOCTYPE html>
-<html lang="es">
+<!--
+TP final
+Legajo: 94041/4
+Kimey Peñalba-->
+
+<!doctype html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="estilos.css"/>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/papercss@1.9.2/dist/paper.min.css"
-    />
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="estilos.css" rel="stylesheet">
   </head>
   
   <body>
-    <div>
-        <header>        
-            <h1 class="titulo">La Hormiga y La Cigarra</h1>
-            <h2>Una bebida maravillosa</h2>
-            <img class="fondoHeader" src="img/img1.jpg" alt="">
-        </header>
+    <div class="container-liquid">
 
-       <!----
-         nav li {
-         display: inline-block;
-         padding: 20px;
-         }
-
-         nav a:hover {
-         color: oldlace;
-         background-color: darkolivegreen;
-} --->
-        
-        <nav>
-            <ul>
-                <li><a href="#Introduccion">Sobre mí</a></li>
-                <li><a href="#LaAventura">La Aventura</a></li>
-                <li><a href="#Bitacora">Bitacora</a></li>
+    <header>
+      <h1 id="arriba" class="titulo">LA HORMIGA <br>Y LA CIGARRA</br></h1>
+    </header>
+    <nav>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <div class="boton-nav">
+                <a href="#principal">
+                <button type="button" class="btn btn-light border border-dark border-2">Pagina principal</button>
+                </a>
+              </div>
+              <div  class="boton-nav">
+                <a href="#aventura">
+                <button type="button" class="btn btn-light border border-dark border-2">La Aventura</button>
+                </a>
+              </div>
+              <div class="boton-nav">
+                <a href="#bitacora">
+                <button type="button" class="btn btn-light border border-dark border-2">Bitacora</button>
+                </a>
+              </div>
             </ul>
-        </nav>
-
-        <div class="Introduccion">
-        <h4 id="Introduccion">Introducción</h4>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor blanditiis debitis eum <b>sed accusantium aliquid</b> quia natus enim fuga error impedit et ipsum eaque aperiam, beatae eius iste! Voluptatibus!</p>
-        <p class="pie-de-imagen">Fotografia de un termo cebando mate.</p>
+          </div>
         </div>
-        
-        <article class="article">
-            <h3 id="LaAventura">Historia</h3>
-                <h1 class="article-title"><a href="">Article Title</a></h1>
-                <p class="article-meta">Written by <a href="#">Super User</a></p>
-                <p class="text-lead"> Lorem... </p>
-                <p>Lorem...</p>
+      </nav>
 
-                <div class="row flex-spaces child-borders">
-                  <label class="paper-btn margin" for="modal-1">Open Modal!</label>
-                </div>
-                <input class="modal-state" id="modal-1" type="checkbox">
-                <div class="modal">
-                  <label class="modal-bg" for="modal-1"></label>
-                  <div class="modal-body">
-                    <label class="btn-close" for="modal-1">X</label>
-                      <iframe src="tpfinal/index.html" frameborder="0" width="600" height="600"></iframe>
-                  </div>
-                </div>
-              
-                <div class="row">
-                  <button>Read More</button>
-                  <button>5 Comments</button>
-                </div>
-              </article>
+      <div id="principal" class="principal"> 
+        <a href="#arriba"><img class="flecha" src="img/flecha.png" alt=""></a>
+        <h2 class="h2-principal">Sobre mí</h2>
+        <img  class="imagen-principal rounded-float-start" src="img/img1.jpg" alt="">
+        <p class="p-principal float-end">Mi nombre es Kimey Peñalba. <br>Y fuí el encargado de la realización de este trabajo</br></p>
+      </div>
 
-        <article>        
-            <h3 id="Bitacora">Importancia</h3>
-            <a href="#arriba"><img class="flecha" src="img/flecha.png" alt=""></a>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eius ducimus eos necessitatibus hic, reprehenderit quaerat distinctio qui asperiores voluptates! Sed, nisi aspernatur atque non fugit corporis ratione repudiandae voluptate?</p>
-        </article>
+      <div id="aventura" class="aventura">
+        <a href="#arriba"><img class="flecha" src="img/flecha.png" alt=""></a>
+        <h2>La Aventura</h2>
+        <p>A continuación se encuentra el botón que llevara a la aventura basada en la clasica fabula de Esopo.<br>¡Exitos!</br></p>
+        <div class="position-relative"></div>
+        <div class="position-absolute top-50 start-50 translate-middle-x"></div>
+          <button type="button" class="position-absolute top-1000 start-50 translate-middle-x btn btn-light btn-lg border border-dark border-2 " data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Abrir la Aventura
+          </button>
+          </div>
+        </div>
+      </div>
 
-        <footer>
-            <p>Esto es un footer</p>
-        </footer>
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              <div class="modal-header-sm">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <iframe class="juego" src="tpfinal/index.html" frameborder="0" width="690" height="620"></iframe>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="bitacora" class="bitacora">
+        <a href="#arriba"><img class="flecha" src="img/flecha.png" alt=""></a>
+        <h1 class="titulo-bitacora">Bitacora</h1>
+        <img class="imagen-bitacora-1 rounded float-start" src="img/a.jpeg" alt="">
+        <img class="imagen-bitacora-2 rounded float-start" src="img/2.png" alt="">
+        <img class="imagen-bitacora-3 rounded float-start" src="img/cigarra5.png" alt="">
+        <h3 class="etapa1">Etapa Aventura</h3>
+        <p>Empecé dando vida a la aventura interactiva, tomando la decisión de incorporar ilustraciones creadas personalmente. La narrativa, al desarrollarse con múltiples finales alternativos, requerieron el uso de herramientas como el diagrama de flujo, que facilitaron el porceso.</p>
+        <p>Intentado pensar en los posibles finales alternativos, tuve que descartar algunos detalles que alargaban la historia, o eliminar algunos, como por ejemplo un cuarto final en el cual la cigarra viajaba por el mundo buscando una forma de ganarse el alimento con su musica, hasta encontrar una comunidad de cigarras y así formar una familia.</p>
+        <img class="imagen-bitacora-4 float-end" src="img/b6.png" alt="">
+        <img class="imagen-bitacora-5 float-end" src="img/4.png" alt="">
+        <h3>Etapa Videojuego</h3>
+        <p>Para esta etapa reutilicé las mecánicas inspiradas en el juego Frogger (las cuales ya habia incorporado en el  tp4). Aunque me inspiré en ese clásico, incorporé una mecánica nueva para que sea mas acorde a la historia.</p>
+        <p>Esa mecanica era la de conseguir comida y llevarla hasta una meta, el hormiguero.</p>
+        <p>La traduccion del codigo a P5.js (que hasta entonces estaba escrito en Processing) fue lo que me demando mas tiempo, pero pude solucionarlo.</p>
+        <h3>Etapa final</h3>
+        <p>La parte más desafiante para mi fue la integración de todos los códigos. Unificar la página web, la aventura interactiva y el videojuego. </p>
+        <img class="imagen-bitacora-6 rounded float-start" src="img/img0.jpg" alt="">
+
+        <p class="conclusion">Por lo que agradezco a todos los profesores y alumnos que me ayudaron a resolver mis dudas.</p>
+      </div>
+
+      <footer>
+        <p>Trabajo practico final, tecnologia multimedia 1</p>
+      </footer>
     </div>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
 </html>

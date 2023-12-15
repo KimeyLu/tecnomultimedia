@@ -1,46 +1,98 @@
-div {
-    background-color: lightgoldenrodyellow;
-    width: 800px;
-    max-width: 95%; 
-    margin: 0 auto;
+.flecha {
+    width: 3%;
+    margin: 10;
+}
+
+.navbar-nav {
+    margin-left: 35%;
 }
 
 header {
-    padding: 40px;
+    background-color: darkolivegreen;
 }
-
+.boton-nav{
+    margin-right: 30%;
+}
 .titulo {
-    float: left;
+    color: whitesmoke;
+    padding: 5%;
+    font-size: 500%;
 }
 
-.fondoHeader {
-    max-width: 20%;
-    float: right;
+.principal {
+    background-color: darkgreen;
+    padding: 5%;
+}
+.imagen-principal {
+    width: 20%;
+}
+.h2-principal {
+    width: 70%;
+}
+.p-principal{
+    margin-left: 20%;
+    
 }
 
-nav{
-    width: 800px;
-    max-width: 55%; 
-    margin: 0 auto; 
-}
-nav li {
-    display: inline-block;
-    padding: 20px;
+.aventura {
+    background-color: darkslateblue;
+    padding: 5%;
+    padding-bottom: 15%;
 }
 
-article {
-    margin: 30px;
-    max-width: 85%;
-    padding-top: 10px;
+modal 
+.modal-dialog  {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.modal-header-sm  {
+    margin-top: 0.5%;
+}
+.juego {
+    padding-left: 10%;
+    margin-top: -2%;
+    margin-bottom: -3%;
+}
 
+.bitacora {
+    background-color: olivedrab;
+    padding: 5%;
+    padding-bottom: 5%;
+}
+.etapa1 {
+    margin-top: 20%;
+}
+.imagen-bitacora-1 {
+    width: 10%;
+}
+.imagen-bitacora-2 {
+    width: 10%;
+ 
+}
+.imagen-bitacora-3 {
+    width: 10%;
+}
+.imagen-bitacora-4 {
+    width: 10%;
+}
+.imagen-bitacora-5 {
+    width: 10%;
+}
+.imagen-bitacora-6 {
+    width: 15%;
+}
+.conclusion {
+    margin-top: 20%;
+}
+.titulo-bitacora {
+    color: whitesmoke;
+    margin-bottom: 5%;
+}
+p {
+    color: whitesmoke;
 }
 
 footer {
-    color: white;
-    background-color: black;
-    padding: 50px;
-}
-
-html {
-    scroll-behavior: smooth;
+    background-color: darkblue;
+    padding: 10%;
 }
