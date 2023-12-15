@@ -2,11 +2,9 @@
     width: 3%;
     margin: 10;
 }
-
 .navbar-nav {
     margin-left: 35%;
 }
-
 header {
     background-color: darkolivegreen;
 }
@@ -24,14 +22,11 @@ header {
     padding: 5%;
 }
 .imagen-principal {
-    width: 20%;
+    width: 15%;
+    margin-bottom: 5%;
 }
 .h2-principal {
     width: 70%;
-}
-.p-principal{
-    margin-left: 20%;
-    
 }
 
 .aventura {
@@ -93,6 +88,6 @@ p {
 }
 
 footer {
-    background-color: darkblue;
+    background-color: #000435;
     padding: 10%;
 }
